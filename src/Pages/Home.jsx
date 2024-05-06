@@ -1,7 +1,7 @@
 import React from 'react'
-import { Main } from '../assets/layouts/Main'
-import { Header } from '../assets/layouts/Header'
-import { Footer } from '../assets/layouts/Footer'
+import { Main } from '../layouts/Main'
+import { Header } from '../layouts/Header'
+import { Footer } from '../layouts/Footer'
 
 
 
