@@ -1,7 +1,11 @@
 import React from 'react'
+import { Header } from '../layouts/Header'
+
 
 export const Products = () => {
   return (
-    <div>Products</div>
+    <div className='Products'>
+        
+    </div>
   )
 }

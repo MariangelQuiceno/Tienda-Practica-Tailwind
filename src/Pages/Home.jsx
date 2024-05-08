@@ -1,7 +1,7 @@
 import React from 'react'
 import { Main } from '../layouts/Main'
-import { Header } from '../layouts/Header'
 import { Footer } from '../layouts/Footer'
+import { Cards } from '../Elements/Cards'
 
 
 
@@ -9,11 +9,13 @@ import { Footer } from '../layouts/Footer'
 
 export const Home = () => {
   return (
-    <div className='Home min-h-screen min-w-max'>
+    <div className='Home min-h-screen'>
         <div className='Home'>
-          <Header>
+         <Main>
+          <Cards></Cards>
+         </Main>
+      
 
-          </Header>
 
         </div>
     </div>
