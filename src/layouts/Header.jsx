@@ -47,7 +47,8 @@ export const Header = () => {
           <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded' to={'/categorias'}>Categorias</NavLink></li>
         </ul>
         <div class="search-bar ml-40 flex flex-row">
-        <BsSearch className="text-white text-xl" /> <input  type="search" placeholder="Ingrese un Producto" className='searchBar border-2 border-orange-500 rounded focus:border-orange-500 focus:outline-none h-9 p-2' />
+        <BsSearch className="text-white text-3xl mr-3" /> 
+        <input  type="search" placeholder="Ingrese un Producto" className='searchBar border-2 border-orange-500 rounded focus:border-orange-500 focus:outline-none h-9 p-2' />
         <span class="flex items-center whitespace-nowrap px-3"/>
        </div>
         </navbar>
