@@ -13,9 +13,11 @@ export const Home = () => {
         <div className='Home'>
          <Main>
           <Cards></Cards>
+          <Cards></Cards>
+          <Cards></Cards>
          </Main>
-      
-
+         <Footer/>
+         
 
         </div>
     </div>

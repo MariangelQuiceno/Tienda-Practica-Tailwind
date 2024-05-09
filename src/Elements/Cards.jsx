@@ -4,8 +4,8 @@ import { BsFillStarFill } from "react-icons/bs";
 
 export const Cards = () => {
   return (
-    <div className='card-creator bg-white max-h-fit p-5 flex flex-row' style={{ width: '35rem' }}>
-        <div className="img-card">
+    <div className='card-creator bg-white max-h-fit p-5 flex flex-row m-2' style={{ width: '28rem' }}>
+        <div className="img-card flex justify-center items-center">
             <img
           src={imgTest}
           alt='Product Alt Img'
