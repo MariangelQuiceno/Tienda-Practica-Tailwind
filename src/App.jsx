@@ -4,6 +4,8 @@ import { Routes, Route } from 'react-router-dom' // Corregir Routes y Router a R
 import { Products } from './Pages/Products'
 import { Categories } from './Pages/Categories'
 import { Header } from './layouts/Header'
+import { Footer } from './layouts/Footer'
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
         <Route path='/productos' element={<Products />} />
         <Route path='/categorias' element={<Categories />} />
       </Routes>
+      <Footer/>
     </>
   )
 }
