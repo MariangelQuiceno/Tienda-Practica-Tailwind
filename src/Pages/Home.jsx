@@ -25,10 +25,10 @@ export const Home = () => {
             <Card key={product.id} product={product} />
           ))}
         </Main>
-         <CardsInfo title1={'Compras Online'} img1={imgBuy}
-         title2={'Recibe cupones'} img2={imgCupons}/>
-         <CardsInfo title1={'Servicio de Envio'} img1={imgTravel}
-         title2={'Productos de segunda mano'} img2={imgTree}/>
+         <CardsInfo title1={'online purchases'} img1={imgBuy}
+         title2={'%5 of Cashback'} img2={imgCupons}/>
+         <CardsInfo title1={'Shipping service'} img1={imgTravel}
+         title2={'Second Hand Products'} img2={imgTree}/>
         </div>
     </div>
   )

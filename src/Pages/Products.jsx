@@ -1,24 +1,30 @@
-import React, { useContext, useState } from 'react'
-import { Card } from '../Elements/Card'
-import { Main } from '../layouts/Main'
-import { DataContext } from '../Context/Context'
+import React, { useContext, useState } from 'react';
+import { Card } from '../Elements/Card';
+import { Main } from '../layouts/Main';
+import { DataContext } from '../Context/Context';
 import { BsSearch } from "react-icons/bs";
-
-
-
-
 
 export const Products = () => {
   const products = useContext(DataContext);
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('all');
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredProducts = products.filter(product =>
-    product.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  const filteredProducts = products.filter(product => {
+    const titleMatch = product.title.toLowerCase().includes(searchTerm.toLowerCase());
+    const categoryMatch = selectedCategory === 'all' || product.category === selectedCategory;
+    return titleMatch && categoryMatch;
+  });
+
+  // Extracting unique categories
+  const categories = ['all', ...new Set(products.map(product => product.category))];
 
   return (
     <div className='Products'>
@@ -32,11 +38,24 @@ export const Products = () => {
           onChange={handleSearch}
         />
         <span className="flex items-center whitespace-nowrap px-3"/>
+        <select
+          value={selectedCategory}
+          onChange={handleCategoryChange}
+          className='border-2 border-orange-500 rounded focus:border-orange-500 focus:outline-none h-9 p-2 ml-2'
+        >
+          {categories.map(category => (
+            <option key={category} value={category}>{category}</option>
+          ))}
+        </select>
       </div>
       <Main>
-        {filteredProducts.map(product => (
-          <Card key={product.id} product={product} />
-        ))}
+        {filteredProducts.length > 0 ? (
+          filteredProducts.map(product => (
+            <Card key={product.id} product={product} />
+          ))
+        ) : (
+          <p>No se encontraron productos que coincidan con la búsqueda.</p>
+        )}
       </Main>
     </div>
   );

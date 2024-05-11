@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ad1 from '../assets/ads/ad-1-header.png';
 import ad2 from '../assets/ads/ad-2-header.png';
 import ad3 from '../assets/ads/ad-3-header.png';
+import { TbShoppingCart } from "react-icons/tb";
 import { NavLink } from 'react-router-dom';
 
 
@@ -41,9 +42,9 @@ export const Header = () => {
       </div>
       <div className='Header bg-UT-orange h-12 flex justify-center items-center'>
         <ul className='list-organizer flex justify-center  h-10  '>
-        <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded' to={'/'}>Inicio</NavLink></li>
-          <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded' to={'/productos'} >Productos</NavLink></li>
-          <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded' to={'/categorias'}>Categorias</NavLink></li>
+        <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded text-xl' to={'/'}>Home</NavLink></li>
+          <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded text-xl' to={'/productos'} >Products</NavLink></li>
+          <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded text-xl' to={'/carrito'}>My Shopcar</NavLink></li>
         </ul>
       
       </div>
