@@ -1,10 +1,15 @@
 import React from 'react'
-import { Header } from '../layouts/Header'
+import { Main } from '../layouts/Main'
+import { CategoryCard } from '../Elements/CategoryCard'
+
 
 
 export const Categories = () => {
   return (
     <div className='Categories'>
+      <Main>
+
+      </Main>
        
     </div>
   )
