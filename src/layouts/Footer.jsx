@@ -8,7 +8,7 @@ export const Footer = () => {
     <div>
       <div className='Footer bg-UT-orange max-h-fit p-5'>
         <ul className="text-white text-sm list-none ml-5 w-full">
-          <li>Contact: +57 312 763 2246</li>
+          <li>Contacto: +57 312 763 2246</li>
           <li>Email: mariangelql1129@gmail.com </li>
           <li>© 2024 Mariángel Quiceno Largo</li>
           <li>Colombia</li>

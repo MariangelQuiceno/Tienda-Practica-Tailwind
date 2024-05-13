@@ -4,9 +4,11 @@ import App from './App.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { DataProvider } from './Context/Context.jsx'
+import { CartProvider } from './Context/CartContext.jsx'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <DataProvider><BrowserRouter><App /></BrowserRouter>
-  </DataProvider>
+  <CartProvider><DataProvider><BrowserRouter><App /></BrowserRouter>
+  </DataProvider></CartProvider>
 )

@@ -3,6 +3,8 @@ import { Card } from '../Elements/Card';
 import { Main } from '../layouts/Main';
 import { DataContext } from '../Context/Context';
 import { BsSearch } from "react-icons/bs";
+import { CartContext } from '../Context/CartContext';
+
 
 export const Products = () => {
   const products = useContext(DataContext);
@@ -23,7 +25,7 @@ export const Products = () => {
     return titleMatch && categoryMatch;
   });
 
-  // Extracting unique categories
+
   const categories = ['all', ...new Set(products.map(product => product.category))];
 
   return (

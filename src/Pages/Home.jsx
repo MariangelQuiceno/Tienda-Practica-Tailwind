@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { Main } from '../layouts/Main'
-import { Card } from '../Elements/Card'
 import { CardsInfo } from '../Elements/CardsInfo'
 import  imgBuy from '../assets/imgResources/imgBuy.jpg'
 import imgCupons from '../assets/imgResources/imgCoupon.png'
@@ -21,14 +20,12 @@ export const Home = () => {
     <div className='Home min-h-screen flex flex-col'>
       <div className='Home'>
         <Main>
-          {slicedProducts.map(product => (
-            <Card key={product.id} product={product} />
-          ))}
+        <CardsInfo title1={'Compras Online'} img1={imgBuy}
+         title2={'%5 de Cashback'} img2={imgCupons}/>
+         <CardsInfo title1={'Servicio de Envio'} img1={imgTravel}
+         title2={'Productos de Segunda'} img2={imgTree}/>
         </Main>
-         <CardsInfo title1={'online purchases'} img1={imgBuy}
-         title2={'%5 of Cashback'} img2={imgCupons}/>
-         <CardsInfo title1={'Shipping service'} img1={imgTravel}
-         title2={'Second Hand Products'} img2={imgTree}/>
+         
         </div>
     </div>
   )
