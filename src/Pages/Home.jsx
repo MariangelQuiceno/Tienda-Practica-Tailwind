@@ -12,7 +12,7 @@ import imgTree from '../assets/imgResources/imgRecycle.png'
 
 export const Home = () => {
   return (
-    <div className='Home min-h-screen flex flex-col'>
+    <div className='Home min-h-screen flex flex-col flex-wrap'>
       <div className='Home mb-5'>
         <CardsInfo title1={'Compras Online'} img1={imgBuy}
          title2={'%5 de Cashback'} img2={imgCupons}/>
