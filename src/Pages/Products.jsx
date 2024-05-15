@@ -43,7 +43,7 @@ export const Products = () => {
         <select
           value={selectedCategory}
           onChange={handleCategoryChange}
-          className='border-2 border-orange-500 rounded focus:border-orange-500 focus:outline-none h-9 p-2 ml-2'
+          className='border-2 border-orange-500 rounded foczus:border-orange-500 focus:outline-none h-9 p-2 ml-2'
         >
           {categories.map(category => (
             <option key={category} value={category}>{category}</option>

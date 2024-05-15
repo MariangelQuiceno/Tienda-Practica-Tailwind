@@ -1,5 +1,4 @@
 import React from 'react'
-import imgTest  from '../assets/imgForTest/test-1.png'
 import { NavLink } from 'react-router-dom'
 
 export const CategoryCard = ({title1, img1}) => {

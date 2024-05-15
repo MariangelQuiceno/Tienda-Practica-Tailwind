@@ -18,7 +18,7 @@ export const Card = ({ product }) => {
   };
 
   return (
-    <div className='card-creator bg-white max-h-fit p-5 flex flex-row m-2 rounded' style={{ width: '28rem' }}>
+    <div className='card-creator bg-white max-h-fit p-5 flex flex-row mx-5 my-5 rounded' style={{ width: '28rem' }}>
       <div className="img-card flex justify-center items-center">
         <img
           src={image}
