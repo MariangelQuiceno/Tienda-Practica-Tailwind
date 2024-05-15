@@ -10,15 +10,16 @@ export const ShopCar = () => {
     <div>
       {cartItems.map(item => (
         <CardShopCar
-          key={item.uniqueId} // Cambiado key de item.id a item.uniqueId
+          key={item.uniqueId} 
           img={item.image}
           titulo={item.title}
           precio={item.price}
           desc={item.description}
-          uniqueId={item.uniqueId} // Cambiado itemId a uniqueId
+          uniqueId={item.uniqueId} 
         />
       ))}
       <PurchaseSummary />
     </div>
   );
 };
+

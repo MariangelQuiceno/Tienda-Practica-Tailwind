@@ -5,7 +5,6 @@ import  imgBuy from '../assets/imgResources/imgBuy.jpg'
 import imgCupons from '../assets/imgResources/imgCoupon.png'
 import imgTravel from '../assets/imgResources/imgTravel.png'
 import imgTree from '../assets/imgResources/imgRecycle.png'
-import { DataContext } from '../Context/Context'
 
 
 

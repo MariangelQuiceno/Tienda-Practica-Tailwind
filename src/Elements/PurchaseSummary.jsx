@@ -42,6 +42,9 @@ export const PurchaseSummary = () => {
 
   const handleDialogClose = () => {
     setShowDialog(false);
+    // Limpiar el contenido del almacenamiento local
+    localStorage.removeItem('cartItems');
+    // Recargar la página
     window.location.reload();
   };
 
@@ -55,38 +58,31 @@ export const PurchaseSummary = () => {
         <div className="price-tax mb-2">Envío Gratis: {isShippingFree ? 'Sí' : 'No'}</div>
       </div>
       <div className="inputs-summary mt-5">
-        {/* Input fields... */}
-      </div>
-
-
-      <div className="inputs-summary mt-5">
-        <h2 className="h3 text-2xl mb-2 text-UT-orange font-semibold">Datos de Envio</h2>
+        
+<h2 className="h3 text-2xl mb-2 text-UT-orange font-semibold">Datos de Envio</h2>
         
         <label for="Name-user" className="label mb-2 text-sm text-UT-orange font-semibold">Nombre</label>
             <input type="text" id="Name-user" className="text-sm rounded-lg block w-full p-2.5 bg-gradient-to-r from-white to-orange-500 border-orange-300 border-solid border-2 focus:border-b-orange-400" placeholder="Nombre" required />
-
+        
             <label for="Tel-user" className="label mb-2 text-sm text-UT-orange font-semibold">Teléfono</label>
             <input type="text" id="Tel-user" className="text-sm rounded-lg block w-full p-2.5 bg-gradient-to-r from-white to-orange-500 border-orange-300 border-solid border-2 focus:border-b-orange-400" placeholder="+57 000-00-00-00" required />
-
+        
             <label for="Address-user" className="label mb-2 text-sm text-UT-orange font-semibold">Dirección</label>
             <input type="text" id="Address-user" className="text-sm rounded-lg block w-full p-2.5 bg-gradient-to-r from-white to-orange-500 border-orange-300 border-solid border-2 focus:border-b-orange-400" placeholder="Dirección" required />
-
+        
             <label for="City-user" className="label mb-2 text-sm text-UT-orange font-semibold">Ciudad</label>
             <input type="text" id="City-user" className="text-sm rounded-lg block w-full p-2.5 bg-gradient-to-r from-white to-orange-500 border-orange-300 border-solid border-2 focus:border-b-orange-400" placeholder="Ciudad" required />
-
+        
             <label for="PostalCode-user" className="label mb-2 text-sm text-UT-orange font-semibold">Código Postal</label>
             <input type="text" id="PostalCode-user" className="text-sm rounded-lg block w-full p-2.5 bg-gradient-to-r from-white to-orange-500 border-orange-300 border-solid border-2 focus:border-b-orange-400" placeholder="Código Postal" required />
-
+        
             <label for="Country-user" className="label mb-2 text-sm text-UT-orange font-semibold">País</label>
             <input type="text" id="Country-user" className="text-sm rounded-lg block w-full p-2.5 bg-gradient-to-r from-white to-orange-500 border-orange-300 border-solid border-2 focus:border-b-orange-400" placeholder="País" required />
-
+        
             <label for="payMethod-user" className="label mb-2 text-sm text-UT-orange font-semibold">Método de Pago</label>
             <input type="text" id="payMethod-user" className="text-sm rounded-lg block w-full p-2.5 bg-gradient-to-r from-white to-orange-500 border-orange-300 border-solid border-2 focus:border-b-orange-400" placeholder="Método de Pago" required />
-
       </div>
-   
       <button onClick={handleConfirmPurchase} className='btn-eliminate-from-car mt-8 bg-UT-orange hover:bg-Selective-Yellow ml-2 rounded text-white h-7 flex flex-row justify-center' style={{ width: '40%' }}>Confirmar compra</button>
-
       {showDialog && (
         <div className="modal mt-3 flex flex-col bg-gradient-to-r from-yellow-300 to-orange-500 border-orange-300 rounded">
           <div className="modal-content flex flex-col justify-center align-middle">
@@ -101,3 +97,4 @@ export const PurchaseSummary = () => {
     </div>
   );
 };
+
