@@ -3,11 +3,12 @@ import { CardShopCar } from '../Elements/CardShopCar';
 import { PurchaseSummary } from '../Elements/PurchaseSummary'; 
 import { CartContext } from '../Context/CartContext';
 
+
 export const ShopCar = () => {
   const { cartItems } = useContext(CartContext);
 
   return (
-    <div>
+    <div className='w-full flex flex-col'>
       {cartItems.map(item => (
         <CardShopCar
           key={item.uniqueId} 

@@ -30,8 +30,8 @@ export const Products = () => {
 
   return (
     <div className='Products'>
-      <div className="search-bar ml-40 flex flex-row mt-5">
-        <BsSearch className="text-UT-orange text-3xl mr-2 " /> 
+      <div className="search-bar ml-40 flex flex-row mt-2">
+        <BsSearch className="text-UT-orange text-2xl mr-2 " /> 
         <input  
           type="search" 
           placeholder="Ingrese un Producto" 

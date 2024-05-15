@@ -42,9 +42,9 @@ export const Header = () => {
       </div>
       <div className='Header bg-UT-orange h-12 flex justify-center items-center'>
         <ul className='list-organizer flex justify-center space-x-2  h-10  '>
-        <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded text-xl' to={'/'}>Inicio</NavLink></li>
-          <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded text-xl' to={'/productos'} >Productos</NavLink></li>
-          <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded text-xl' to={'/carrito'}>Mi Carrito</NavLink></li>
+        <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded text-base' to={'/'}>Inicio</NavLink></li>
+          <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 rounded text-base' to={'/productos'} >Productos</NavLink></li>
+          <li><NavLink className='text-white hover:bg-Selective-Yellow hover:opacity-75 font-bold p-3 w-full rounded text-base' to={'/carrito'}>Mi Carrito</NavLink></li>
         </ul>
       
       </div>

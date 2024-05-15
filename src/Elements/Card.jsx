@@ -18,23 +18,23 @@ export const Card = ({ product }) => {
   };
 
   return (
-    <div className='card-creator bg-white max-h-fit p-5 flex flex-row mx-5 my-5 rounded' style={{ width: '28rem' }}>
-      <div className="img-card flex justify-center items-center">
+    <div className='card-creator bg-white max-h-fit p-5 flex flex-col mx-5 my-5 rounded w-2/6 justify-center items-center'>
+      <div className="img-card flex justify-center items-center w-3/5">
         <img
           src={image}
           alt={title}
-          className='Img w-64 object-contain'/>
+          className='Img object-contain w-3/5'/>
       </div>
 
-      <div className="father-text flex flex-col ml-3">
+      <div className="father-text flex flex-col ml-3 w-3/5">
         <div className="title">
           <h2 className='font-bold text-2xl'>{title}</h2>
         </div>
         <div className="price">
           ${price}
         </div>
-        <div className="description w-60 h-40">
-          <p className='desc-paragraph line-clamp-6 text-sm'>
+        <div className="description h-30">
+          <p className='desc-paragraph line-clamp-5 text-sm'>
             {description}
           </p>
         </div>

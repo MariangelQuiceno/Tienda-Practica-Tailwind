@@ -11,7 +11,7 @@ export const CardShopCar = ({ img, titulo, precio, desc, uniqueId }) => { // Cam
 
   return (
     <>
-      <div className='card-car mb-5 bg-white overflow-hidden relative flex flex-row border-UT-orange border-2 border-opacity-60 p-5' style={{ width: '100%', height: '12rem', display: 'flex', justifyContent: 'flex-start' }}>
+      <div className='card-car mb-5 bg-white overflow-hidden relative flex flex-row border-UT-orange border-2 border-opacity-60 p-3' style={{ width: '100%', height: '12rem', display: 'flex', justifyContent: 'flex-start' }}>
         <img
           src={img}
           alt={titulo}
@@ -22,7 +22,7 @@ export const CardShopCar = ({ img, titulo, precio, desc, uniqueId }) => { // Cam
             <p>${precio}</p>
           </div>
           <p className='desc-car line-clamp-2'>{desc}</p>
-          <button className='btn-eliminate-from-car mt-8 bg-UT-orange  hover:bg-Selective-Yellow  ml-2 rounded text-white h-7 flex flex-row justify-center font-semibold' style={{ width: '40%' }} onClick={handleRemoveFromCart}>Ya no lo quiero...<TbShoppingCartMinus className='text-white flex self-center ml-1' /></button>
+          <button className='btn-eliminate-from-car mt-8 bg-UT-orange  hover:bg-Selective-Yellow  ml-2 rounded text-white h-7 flex flex-row justify-center font-semibold w-3/4' onClick={handleRemoveFromCart}>Ya no lo quiero...<TbShoppingCartMinus className='text-white flex self-center ml-1' /></button>
         </div>
       </div>
     </>
